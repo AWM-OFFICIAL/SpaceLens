@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\SpaceLens.Core\SpaceLens.Core.csproj" />
+    <ProjectReference Include="..\SpaceLens.Scanner\SpaceLens.Scanner.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\logo.ico</ApplicationIcon>
+    <AssemblyName>SpaceLens</AssemblyName>
+    <RootNamespace>SpaceLens</RootNamespace>
+    <Version>1.0.0</Version>
+    <AssemblyTitle>SpaceLens</AssemblyTitle>
+    <Product>SpaceLens</Product>
+    <Company>SpaceLens</Company>
+    <Authors>SpaceLens</Authors>
+    <Description>Understand your storage. Clean it safely.</Description>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\logo.png" />
+    <Resource Include="Assets\icon.png" />
+    <Resource Include="Assets\logo.ico" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,80 @@
+﻿# SpaceLens — Microsoft Store / product listing copy
+# Use with Screenshots\ and feature graphics in this Store folder.
+
+## App name
+SpaceLens
+
+## Short description (≤100 characters recommended)
+Understand your storage. Clean it safely — local scans, transparent risk, Recycle Bin by default.
+
+## Full description
+
+SpaceLens is a Windows storage analyzer and cleanup assistant. It maps what fills your drives, explains why, and only deletes after you confirm.
+
+What you get
+• Full PC or folder scans with live progress
+• Clearest view of largest files, folders, Downloads, and old untouched files
+• Transparent risk labels: SAFE, REVIEW, PROTECTED, UNKNOWN
+• Cleanup suggestions that never one-click delete protected system or personal paths
+• Duplicate detection by size and content hash — you decide what stays
+• Development artifact finder (node_modules, build caches, and more)
+• Application storage estimates (analysis only — SpaceLens does not uninstall apps)
+• Local scan history trends — sizes and category totals only, never file contents
+• Dark and light themes, export to HTML / JSON / CSV
+
+Privacy by design
+Your files stay on your computer. SpaceLens does not upload paths, metadata, or contents. There is no cloud processing and no telemetry by default.
+
+Safety first
+Default cleanup moves items to the Windows Recycle Bin. Permanent delete requires two confirmations. Protected locations are blocked.
+
+Perfect for
+• Freeing space before a Windows upgrade or large install
+• Finding leftover Downloads and regeneratable developer folders
+• Understanding where disk space actually went — without scary one-click cleaners
+
+Requirements: Windows 10 or Windows 11 (x64)
+
+Tagline: Understand your storage. Clean it safely.
+
+## What’s new (1.0.0)
+• First public release
+• Local-first storage analysis and safe cleanup
+• About, Privacy data-folder controls, and polished empty states
+• Installer pack with Setup.bat
+
+## Category
+Utilities & tools · System utilities · Disk utilities
+
+## Tags / keywords
+storage analyzer, disk cleanup, free space, duplicate files, Recycle Bin, local privacy, Windows 11, Windows 10, disk space, node_modules, Downloads cleaner, safe cleanup
+
+## Age rating
+Everyone / PEGI 3 — no accounts, no ads, no user-generated social content
+
+## Privacy policy (short, for listing URL page)
+SpaceLens performs storage analysis entirely on your device. It does not collect, transmit, or sell personal data. Optional local history stores only aggregate sizes and category totals. Crash logs, if any, are written only under %LocalAppData%\SpaceLens\logs on this PC. You can clear history and open the data folder from Privacy in the app.
+
+## Support contact (fill in)
+Email: support@yourdomain.example
+Website: https://yourdomain.example/spacelens
+
+## Screenshot captions (match Screenshots\ files)
+1. 01-welcome.png — First launch: local-only promise, Scan this PC / Choose a folder
+2. 02-overview.png — Home: where space goes, categories, free-space opportunity
+3. 03-largest-files.png — Ranked largest files with sizes and risk
+4. 04-cleanup.png — SAFE / REVIEW suggestions with Recycle Bin actions
+5. 05-duplicates.png — Hash-matched duplicate groups; you choose what stays
+6. 06-development.png — Regeneratable dev artifacts (e.g. node_modules)
+7. 07-settings.png — Theme, scan prefs, Exit SpaceLens
+8. 08-about.png — Version, product story, license
+9. 09-privacy.png — Local-first privacy + open data folder / clear history
+
+## Feature graphic
+Use Store\feature-graphic-1024x500.png for store banners (or 1920x1080 for hero art).
+
+## Package notes for reviewers
+• Runs as normal user (asInvoker); optional UAC elevation from Settings
+• Minimize keeps the app on the taskbar; Close (X) exits
+• Single-instance; launching again focuses the existing window
+• Desktop pack: double-click Setup.bat to install

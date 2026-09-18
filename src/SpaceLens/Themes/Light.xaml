@@ -1,0 +1,42 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Color x:Key="BgColor">#FFF5F5F5</Color>
+  <Color x:Key="SurfaceColor">#FFFFFFFF</Color>
+  <Color x:Key="SurfaceElevatedColor">#FFFAFAFA</Color>
+  <Color x:Key="SidebarColor">#FFF0F0F0</Color>
+  <Color x:Key="BorderColor">#FFD8D8D8</Color>
+  <Color x:Key="BorderSoftColor">#FFD8D8D8</Color>
+  <Color x:Key="TextPrimaryColor">#FF111111</Color>
+  <Color x:Key="TextSecondaryColor">#FF3D3D3D</Color>
+  <Color x:Key="TextMutedColor">#FF555555</Color>
+  <!-- Darker cyan on light surfaces for ≥4.5:1 text contrast; buttons stay vivid via PrimaryButtonBrush -->
+  <Color x:Key="AccentColor">#FF007A8C</Color>
+  <Color x:Key="AccentSoftColor">#22007A8C</Color>
+  <Color x:Key="AccentDimColor">#FF006070</Color>
+  <Color x:Key="AccentBrightColor">#FF00E5FF</Color>
+  <Color x:Key="ChartTrackColor">#FFE8E8E8</Color>
+  <Color x:Key="SafeColor">#FF1A7A54</Color>
+  <Color x:Key="ReviewColor">#FF9A6B00</Color>
+  <Color x:Key="DangerColor">#FFC62828</Color>
+
+  <SolidColorBrush x:Key="BgBrush" Color="{StaticResource BgColor}"/>
+  <SolidColorBrush x:Key="SurfaceBrush" Color="{StaticResource SurfaceColor}"/>
+  <SolidColorBrush x:Key="SurfaceElevatedBrush" Color="{StaticResource SurfaceElevatedColor}"/>
+  <SolidColorBrush x:Key="SidebarBrush" Color="{StaticResource SidebarColor}"/>
+  <SolidColorBrush x:Key="BorderBrush" Color="{StaticResource BorderColor}"/>
+  <SolidColorBrush x:Key="BorderSoftBrush" Color="{StaticResource BorderSoftColor}"/>
+  <SolidColorBrush x:Key="TextPrimaryBrush" Color="{StaticResource TextPrimaryColor}"/>
+  <SolidColorBrush x:Key="TextSecondaryBrush" Color="{StaticResource TextSecondaryColor}"/>
+  <SolidColorBrush x:Key="TextMutedBrush" Color="{StaticResource TextMutedColor}"/>
+  <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentColor}"/>
+  <SolidColorBrush x:Key="AccentSoftBrush" Color="{StaticResource AccentSoftColor}"/>
+  <SolidColorBrush x:Key="AccentDimBrush" Color="{StaticResource AccentDimColor}"/>
+  <SolidColorBrush x:Key="SafeBrush" Color="{StaticResource SafeColor}"/>
+  <SolidColorBrush x:Key="ReviewBrush" Color="{StaticResource ReviewColor}"/>
+  <SolidColorBrush x:Key="DangerBrush" Color="{StaticResource DangerColor}"/>
+
+  <SolidColorBrush x:Key="HeroGradient" Color="{StaticResource BgColor}"/>
+  <SolidColorBrush x:Key="CardFillBrush" Color="{StaticResource SurfaceColor}"/>
+  <SolidColorBrush x:Key="PrimaryButtonBrush" Color="{StaticResource AccentBrightColor}"/>
+  <SolidColorBrush x:Key="AmbientGlowBrush" Color="#00000000"/>
+</ResourceDictionary>

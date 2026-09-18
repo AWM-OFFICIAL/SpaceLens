@@ -1,0 +1,44 @@
+<UserControl x:Class="SpaceLens.Controls.EmptyStateView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SpaceLens.Controls">
+  <!-- Editorial empty: typography + optional action. No cards, mesh, chips, or skeletons. -->
+  <StackPanel MaxWidth="520" Margin="0,48,0,24">
+    <TextBlock Text="{Binding Eyebrow, RelativeSource={RelativeSource AncestorType=local:EmptyStateView}}"
+               FontFamily="{StaticResource MonoFont}"
+               FontSize="12"
+               FontWeight="SemiBold"
+               Foreground="{DynamicResource AccentBrush}"
+               Margin="0,0,0,16"/>
+    <TextBlock Text="{Binding Title, RelativeSource={RelativeSource AncestorType=local:EmptyStateView}}"
+               FontFamily="{StaticResource UiDisplay}"
+               FontSize="32"
+               FontWeight="SemiBold"
+               Foreground="{DynamicResource TextPrimaryBrush}"
+               TextWrapping="Wrap"
+               Margin="0,0,0,12"/>
+    <TextBlock Text="{Binding Description, RelativeSource={RelativeSource AncestorType=local:EmptyStateView}}"
+               FontSize="15"
+               Foreground="{DynamicResource TextSecondaryBrush}"
+               TextWrapping="Wrap"
+               LineHeight="24"
+               Margin="0,0,0,28"/>
+    <StackPanel Orientation="Horizontal"
+                Visibility="{Binding ShowActions, RelativeSource={RelativeSource AncestorType=local:EmptyStateView}, Converter={StaticResource BoolToVis}}">
+      <Button Content="Scan this PC" Style="{StaticResource PrimaryButton}"
+              Command="{Binding DataContext.ScanEntirePcCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+              ToolTip="Analyze all ready drives" Margin="0,0,10,0"
+              AutomationProperties.Name="Scan this PC"/>
+      <Button Content="Choose a folder" Style="{StaticResource GhostButton}"
+              Command="{Binding DataContext.ScanFolderCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+              ToolTip="Analyze one folder only"
+              AutomationProperties.Name="Choose a folder"/>
+    </StackPanel>
+    <TextBlock Text="{Binding Hint1, RelativeSource={RelativeSource AncestorType=local:EmptyStateView}}"
+               FontSize="13"
+               Foreground="{DynamicResource TextMutedBrush}"
+               Margin="0,28,0,0"
+               TextWrapping="Wrap"
+               Visibility="{Binding Hint1, RelativeSource={RelativeSource AncestorType=local:EmptyStateView}, Converter={StaticResource EmptyHintVis}}"/>
+  </StackPanel>
+</UserControl>

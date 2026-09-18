@@ -1,0 +1,35 @@
+## Build
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+publish/
+publish-standalone/
+
+## VS
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Test
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+
+## NuGet
+*.nupkg
+**/packages/*
+
+## Windows
+Thumbs.db
+Desktop.ini
+
+## IDE / local
+.cursor/
+.superdesign/
+*.rsuser
+
+## Local crash / temp
+**/spacelens-crash.txt
